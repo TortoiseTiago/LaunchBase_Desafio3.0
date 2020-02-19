@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>    
+    <meta charset="UTF-8">
+    {% block head %}    
+        <title>Sobre | Rocketseat </title>
+    {% endblock %}
+    <link rel="stylesheet" href="/style.css">
+    </head>
+
+<body class="fadeIn">
+    <header>
+        <div class="logotipo">
+            <a href="/">
+                <img src="./assets/logo-rocketseat.svg" alt="Logotipo">
+            </a>
+        </div>
+        <div class="links">
+            <a href="/">Sobre</a>
+            <a href="/contents">Conteúdos</a>
+            <a href="https://discordapp.com/invite/gCRAFhc" target="black_">Comunidade</a>
+            <a href="mailto:oi@rocketseat.com.br" target="blanck_">Email</a>
+            <a href="tel:+5547992078767">Telefone</a>
+        </div>
+    </header>
+    
+    {% block content %} {% endblock %}
+
+
+    <footer>
+        <a href="https://www.facebook.com/rocketseat" target="black_">
+            <img src="./assets/social_facebook_box_blue_256_30649.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/rocketseat_oficial/" target="black_">
+            <img src="./assets/instagram_108043.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/rocketseat" target="black_">
+            <img src="./assets/1491579542-yumminkysocialmedia22_83078.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com/rocketseat" target="black_">
+            <img src="./assets/social_youtube_2756.png" alt="Youtube">
+        </a>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

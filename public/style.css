@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+    --color-rocketseat:#7159c1;
+    --color-green:#33e25f;
+    --color-launchbase: #FD951F;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 400ms ease-in-out;
+    -moz-animation: fadeIn 400ms ease-in-out;
+    -o-animation: fadeIn 400ms ease-in-out;
+    animation: fadeIn 400ms ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+}
+
+header {
+    background-color: var(--color-rocketseat);
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-bottom: 3px solid var(--color-rocketseat);
+    box-shadow: 10px 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.logotipo {
+    position: absolute;
+}
+
+.logotipo a img {
+    height: 36px;
+    margin-top: -2px;
+    margin-left: 15;
+    padding-right: 23px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a + a {
+    padding-left: 30px;
+}
+
+.links a:hover {
+    font-weight: bold;
+    transition: all 0.2s ease 0s;
+}
+
+section {
+    display: flex;
+    position: relative;
+    height: auto;
+    padding: 60px 0;
+    margin-bottom: 32px;
+}
+
+section .text {
+    width: 40%;
+    margin-left: 50px;
+}
+
+section .text h2 {
+    color: rgb(75, 75, 75);
+    font-size: 41px;
+    line-height: 56px;
+}
+
+section .text p {
+    color: rgb(154, 142, 191);
+    font-size: 24px;
+    line-height: 36px;
+    margin: 16px 0px 0px;
+}
+
+section div img {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 420px;
+}
+
+.techs {
+    text-align: center;
+}
+
+.techs h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 15px;
+    background-color: var(--color-rocketseat);
+    box-shadow: 10px 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.techs li {
+    list-style: none;
+    padding: 44px;
+}
+
+.techs img {
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.techs li p {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.techs .basic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.techs .beginer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    background-color: var(--color-rocketseat);
+    padding: 15px;
+    text-align: center;
+}
+
+footer a img {
+    width: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a+a {
+    padding-left: 52px;
+}
+
+
+/*===  CARD CURSOS  ===*/
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.Starter, .LaunchBase, .GoStack {
+    text-align: center;
+}
+
+.card {
+    padding: 100px 30px 30px 30px;
+    border: 2px solid black;
+}
+
+.Starter:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-rocketseat);
+    transition: all 200ms ease-in-out ;
+}
+
+.LaunchBase:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-launchbase);
+    transition: all 200ms ease-in-out ;
+}
+
+.GoStack:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-green);
+    transition: all 200ms ease-in-out ;
+}
+
+.image-container {
+    margin-bottom: 100px;
+}
+
+
+/* === MODAL ==== */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.modal .modal-content{
+    padding: 10px;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 55px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL ATIVO ==== */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay.active iframe {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 5%;
+    border-radius: 20px;
+}

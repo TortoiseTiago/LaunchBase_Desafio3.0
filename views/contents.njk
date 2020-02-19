@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Cursos | Rocketseat </title>
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock %}
+
+{% block content %}
+
+<div class="content">
+
+    <div class="card Starter" id="starter">
+        <div class="image-container">
+            <img src="./assets/Starter.svg" alt="LaunchBase">
+        </div>
+        <div class="name">
+            <h1>LaunchBase</h1>
+        </div>
+        <div class="info">
+            <p> 5 Modulos </p>
+        </div>
+        <div class="price">
+            <p>Free</p>
+        </div>
+    </div>
+
+    <div class="card LaunchBase" id="launchbase">
+
+        <div class="image-container">
+            <img src="./assets/LaunchBase.svg" alt="LaunchBase">
+        </div>
+
+        <div class="name">
+            <h1>LaunchBase</h1>
+        </div>
+
+        <div class="info">
+            <p> 12 Modulos </p>
+        </div>
+
+        <div class="price">
+            <p>Pago</p>
+        </div>
+    </div>
+
+    <div class="card GoStack" id="gostack">
+        <div class="image-container">
+            <img src="./assets/GoStack.svg" alt="GoStack">
+        </div>
+
+        <div class="name">
+            <h1>GoStack</h1>
+        </div>
+
+        <div class="info">
+            <p> 21 Modulos </p>
+        </div>
+
+        <div class="price">
+            <p>Pago</p>
+        </div>
+    </div>
+</div>
+<div class="modal-overlay">
+    <div class="modal">
+        <a class="close-modal">
+            <i class="material-icons">
+                close
+            </i>
+        </a>
+        <div class="modal-content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
